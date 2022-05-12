@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEtecFlix.Categorias.Comedia">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="Black">
+
+            <ScrollView>
+                <Grid RowDefinitions="100, 300"
+                      ColumnDefinitions="*, *"
+                      Padding="5"
+                 >
+                    <Image HorizontalOptions="Center" x:Name="logo" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <ImageButton x:Name="btnTrocando"  Grid.Row="1" Grid.Column="0" Clicked="btnTrocando_Clicked"/>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
